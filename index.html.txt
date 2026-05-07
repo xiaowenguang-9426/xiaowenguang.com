@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiao Wenguang | Industrial Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .project-card:hover img { transform: scale(1.05); }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- 导航栏 -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter">XIAO.WENGUANG</span>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">关于</a>
+                <a href="#projects" class="hover:text-blue-600 transition">作品</a>
+                <a href="#awards" class="hover:text-blue-600 transition">荣誉</a>
+                <a href="#contact" class="px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition">联系我</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄页 -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3">
+                <h2 class="text-blue-600 font-semibold mb-2 tracking-widest uppercase text-sm">Industrial Product Designer</h2>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                    用设计构想<br><span class="gradient-text">未来的可能性</span>
+                </h1>
+                <p class="text-gray-500 text-lg mb-8 max-w-lg leading-relaxed">
+                    我是肖文光，一名工业设计研究生。专注于交通工具设计、应急救援装备及智能硬件开发。2020-2025年期间累计获得30余项国家级及省级设计奖项。
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="px-8 py-3 bg-black text-white rounded-lg font-medium hover:shadow-xl transition">查看作品</a>
+                    <div class="flex items-center space-x-2 text-sm text-gray-400 border-l pl-4">
+                        <span>北京工业大学 (2025)</span><br>
+                        <span>大连交通大学 (2024)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 mt-12 md:mt-0 relative">
+                <!-- 这里建议替换为你最得意的渲染图，如两栖车 -->
+                <div class="w-full h-80 bg-gray-200 rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" alt="Design Preview" class="w-full h-full object-cover opacity-50">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心项目 -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold">精选作品集</h2>
+                    <p class="text-gray-500 mt-2">Selected Works 2020 - 2025</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- 项目 1 -->
+                <div class="project-card group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 aspect-video mb-4">
+                        <!-- 请在此处放入 Du-power 2055 图片 -->
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold italic">Du-power 2055 两栖车</div>
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">校优秀毕业设计</div>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-blue-600 transition">Du-power 2055 两栖概念车设计</h3>
+                    <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+                        基于2055年未来城市背景，解决交通拥堵。采用无叶喷气发动技术，实现陆空动力自由切换。获得北美艺术设计大赛金奖、香港当代设计奖银奖。
+                    </p>
+                </div>
+
+                <!-- 项目 2 -->
+                <div class="project-card group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 aspect-video mb-4">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold italic">BIM 智能救援头盔</div>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-blue-600 transition">基于 BIM 技术的智能救援头盔</h3>
+                    <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+                        专为消防员设计。结合增强现实（AR）与BIM建模，在浓烟环境下精准定位避险路线与被困人员。
+                    </p>
+                </div>
+
+                <!-- 项目 3 -->
+                <div class="project-card group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 aspect-video mb-4">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold italic">SOS 平衡梯车</div>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-blue-600 transition">SOS 应急救援平衡梯车</h3>
+                    <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+                        将平衡车与伸缩救援梯结合，单人即可在狭窄地带快速转运伤员。
+                    </p>
+                </div>
+
+                <!-- 项目 4 -->
+                <div class="project-card group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-100 aspect-video mb-4">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold italic">24 节气打火机</div>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-blue-600 transition">“星火流传” - 24 节气打火机</h3>
+                    <p class="text-gray-500 text-sm mt-2 leading-relaxed">
+                        文化创意产品。通过不同燃气成分改变火焰色彩对应节气，获第九届米兰设计周二等奖。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 荣誉 & 技能 -->
+    <section id="awards" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16">
+            <div class="md:col-span-2">
+                <h2 class="text-2xl font-bold mb-8">主要荣誉</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between border-b pb-2"><span>北美艺术设计大赛 · 金奖</span><span class="text-gray-400">国家级</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>香港当代设计奖 · 银奖</span><span class="text-gray-400">国家级</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>英国国际艺术设计大赛 · 银奖</span><span class="text-gray-400">国家级</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>新加坡金沙艺术设计大奖 · 铜奖</span><span class="text-gray-400">国家级</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>辽宁省大学生工业设计大赛 · 一等奖</span><span class="text-gray-400">省级</span></div>
+                    <p class="text-blue-600 text-sm mt-4">+ 另获三十余项专业级奖项</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-8">专业技能</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-white rounded-lg shadow-sm text-sm border font-medium">Rhino</span>
+                    <span class="px-4 py-2 bg-white rounded-lg shadow-sm text-sm border font-medium">Keyshot</span>
+                    <span class="px-4 py-2 bg-white rounded-lg shadow-sm text-sm border font-medium">Unreal Engine 5</span>
+                    <span class="px-4 py-2 bg-white rounded-lg shadow-sm text-sm border font-medium">Cinema 4D</span>
+                    <span class="px-4 py-2 bg-white rounded-lg shadow-sm text-sm border font-medium">Blender</span>
+                    <span class="px-4 py-2 bg-white rounded-lg shadow-sm text-sm border font-medium">Photoshop</span>
+                    <span class="px-4 py-2 bg-white rounded-lg shadow-sm text-sm border font-medium">Illustrator</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <footer id="contact" class="py-20 bg-black text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">期待与您合作</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 mb-12 text-gray-400">
+                <p><i class="far fa-envelope mr-2"></i> 2696059835@qq.com</p>
+                <p><i class="fas fa-mobile-alt mr-2"></i> 13052747927</p>
+                <p><i class="fab fa-weixin mr-2"></i> xiao0303a</p>
+            </div>
+            <div class="pt-8 border-t border-gray-800 text-gray-600 text-sm">
+                &copy; 2025 Xiao Wenguang. Portfolio Website.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
